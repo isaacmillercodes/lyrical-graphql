@@ -32,7 +32,7 @@ class SongCreate extends Component {
   }
 }
 
-const mutation = `
+const mutation = gql`
   mutation AddSong($title: String){
     addSong(title: $title) {
       title
